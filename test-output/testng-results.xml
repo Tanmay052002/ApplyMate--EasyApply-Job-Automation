@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-02-17T17:14:41 IST" name="Suite" finished-at="2025-02-17T17:16:14 IST" duration-ms="92502">
+    <groups>
+    </groups>
+    <test started-at="2025-02-17T17:14:41 IST" name="Test" finished-at="2025-02-17T17:16:14 IST" duration-ms="92502">
+      <class name="filterTestcase.JobFunc_eng">
+        <test-method signature="engFuncopt()[pri:0, instance:filterTestcase.JobFunc_eng@752325ad]" started-at="2025-02-17T17:15:17 IST" name="engFuncopt" finished-at="2025-02-17T17:15:17 IST" duration-ms="487" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- engFuncopt -->
+      </class> <!-- filterTestcase.JobFunc_eng -->
+      <class name="filterTestcase.Easyapply">
+        <test-method signature="easyApplybtn()[pri:0, instance:filterTestcase.Easyapply@2aceadd4]" started-at="2025-02-17T17:15:13 IST" name="easyApplybtn" finished-at="2025-02-17T17:15:15 IST" duration-ms="2456" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- easyApplybtn -->
+      </class> <!-- filterTestcase.Easyapply -->
+      <class name="filterTestcase.JobType_fullTime">
+        <test-method signature="fullTimeopt()[pri:0, instance:filterTestcase.JobType_fullTime@279fedbd]" started-at="2025-02-17T17:15:17 IST" name="fullTimeopt" finished-at="2025-02-17T17:15:18 IST" duration-ms="337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fullTimeopt -->
+      </class> <!-- filterTestcase.JobType_fullTime -->
+      <class name="easyApplytestcase.FinalTest">
+        <test-method signature="finalTestCase()[pri:0, instance:easyApplytestcase.FinalTest@2925bf5b]" started-at="2025-02-17T17:15:25 IST" name="finalTestCase" finished-at="2025-02-17T17:16:14 IST" duration-ms="48555" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finalTestCase -->
+      </class> <!-- easyApplytestcase.FinalTest -->
+      <class name="testcase.SkillInput">
+        <test-method signature="input(java.lang.String)[pri:0, instance:testcase.SkillInput@7a8c8dcf]" started-at="2025-02-17T17:15:04 IST" name="input" data-provider="testData" finished-at="2025-02-17T17:15:08 IST" duration-ms="3513" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Automation]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- input -->
+      </class> <!-- testcase.SkillInput -->
+      <class name="easyApplytestcase.Apply_btn">
+        <test-method signature="applyBtn()[pri:0, instance:easyApplytestcase.Apply_btn@45c7e403]" started-at="2025-02-17T17:15:21 IST" name="applyBtn" finished-at="2025-02-17T17:15:25 IST" duration-ms="4233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applyBtn -->
+      </class> <!-- easyApplytestcase.Apply_btn -->
+      <class name="testcase.login">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:testcase.login@49438269]" started-at="2025-02-17T17:14:40 IST" name="setupReport" finished-at="2025-02-17T17:14:41 IST" duration-ms="771" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupReport -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.login@49438269]" started-at="2025-02-17T17:14:41 IST" name="setup" finished-at="2025-02-17T17:14:47 IST" duration-ms="5577" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:testcase.login@49438269]" started-at="2025-02-17T17:14:50 IST" name="login" data-provider="testData" finished-at="2025-02-17T17:15:02 IST" duration-ms="12502" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tanmaybansal441@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Testing@1357]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcase.login@49438269]" started-at="2025-02-17T17:16:14 IST" name="tearDown" finished-at="2025-02-17T17:16:14 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:testcase.login@49438269]" started-at="2025-02-17T17:16:14 IST" name="tearDownReport" finished-at="2025-02-17T17:16:15 IST" duration-ms="1060" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownReport -->
+      </class> <!-- testcase.login -->
+      <class name="testcase.jobSearch">
+        <test-method signature="jobSrh()[pri:0, instance:testcase.jobSearch@5dda768f]" started-at="2025-02-17T17:15:02 IST" name="jobSrh" finished-at="2025-02-17T17:15:04 IST" duration-ms="1647" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jobSrh -->
+      </class> <!-- testcase.jobSearch -->
+      <class name="filterTestcase.JobFunc_it">
+        <test-method signature="itFuncopt()[pri:0, instance:filterTestcase.JobFunc_it@2a5c8d3f]" started-at="2025-02-17T17:15:16 IST" name="itFuncopt" finished-at="2025-02-17T17:15:17 IST" duration-ms="510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- itFuncopt -->
+      </class> <!-- filterTestcase.JobFunc_it -->
+      <class name="filterTestcase.AllFilter">
+        <test-method signature="allFilters()[pri:0, instance:filterTestcase.AllFilter@24269709]" started-at="2025-02-17T17:15:08 IST" name="allFilters" finished-at="2025-02-17T17:15:13 IST" duration-ms="5227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allFilters -->
+      </class> <!-- filterTestcase.AllFilter -->
+      <class name="filterTestcase.JobType_intern">
+        <test-method signature="internopt()[pri:0, instance:filterTestcase.JobType_intern@b3ca52e]" started-at="2025-02-17T17:15:18 IST" name="internopt" finished-at="2025-02-17T17:15:21 IST" duration-ms="3109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- internopt -->
+      </class> <!-- filterTestcase.JobType_intern -->
+      <class name="filterTestcase.Exp_intern_level">
+        <test-method signature="interExpopt()[pri:0, instance:filterTestcase.Exp_intern_level@24aed80c]" started-at="2025-02-17T17:15:15 IST" name="interExpopt" finished-at="2025-02-17T17:15:16 IST" duration-ms="622" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- interExpopt -->
+      </class> <!-- filterTestcase.Exp_intern_level -->
+      <class name="filterTestcase.Exp_ent_level">
+        <test-method signature="entryExp()[pri:0, instance:filterTestcase.Exp_ent_level@3a52dba3]" started-at="2025-02-17T17:15:16 IST" name="entryExp" finished-at="2025-02-17T17:15:16 IST" duration-ms="471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- entryExp -->
+      </class> <!-- filterTestcase.Exp_ent_level -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

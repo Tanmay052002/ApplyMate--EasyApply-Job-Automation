@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="testcase.login"/>
+      <class name="testcase.jobSearch"/>
+      <class name="testcase.SkillInput"/>
+      <class name="filterTestcase.AllFilter"/>
+      <class name="filterTestcase.Easyapply"/>
+      <class name="filterTestcase.Exp_intern_level"/>
+      <class name="filterTestcase.Exp_ent_level"/>
+      <class name="filterTestcase.JobFunc_it"/>
+      <class name="filterTestcase.JobFunc_eng"/>
+      
+    <class name="filterTestcase.JobType_fullTime"/>
+      
+      <class name="filterTestcase.JobType_intern"/>
+      <class name="easyApplytestcase.Apply_btn"/>
+      <class name="easyApplytestcase.FinalTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
