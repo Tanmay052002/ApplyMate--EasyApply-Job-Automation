@@ -44,10 +44,6 @@ public class FinalTestpage extends basetest {
     public void Solution() throws InterruptedException {
         System.out.println("Entering loop.");
 
-//        List<WebElement> jobCards = driver.findElements(By.xpath(loc.getProperty("job_card")));
-//        for (int i = 1; i <= jobCards.size(); i++) {
-////    		Thread.sleep(2000); // Wait for the job card to open
-////    		jobCard.click(); // Click on the job card to open it
         for (int i = 1;; i++) {
             // Refresh the list of job cards
             List<WebElement> jobCards = driver.findElements(By.xpath(loc.getProperty("job_card")));
