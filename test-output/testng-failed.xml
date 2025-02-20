@@ -3,33 +3,15 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="easyApplytestcase.SubmitApplication">
+      <class name="easyApplytestcase.FinalTest">
         <methods>
           <include name="tearDownReport"/>
           <include name="setup"/>
-          <include name="setupReport"/>
-          <include name="tearDown"/>
-          <include name="submitAppOpt"/>
-        </methods>
-      </class> <!-- easyApplytestcase.SubmitApplication -->
-      <class name="easyApplytestcase.review_btn">
-        <methods>
-          <include name="tearDownReport"/>
-          <include name="setup"/>
-          <include name="review_btnOpt"/>
+          <include name="finalTestCase"/>
           <include name="setupReport"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- easyApplytestcase.review_btn -->
-      <class name="easyApplytestcase.Next_btn">
-        <methods>
-          <include name="tearDownReport"/>
-          <include name="setup"/>
-          <include name="setupReport"/>
-          <include name="tearDown"/>
-          <include name="nextbtn"/>
-        </methods>
-      </class> <!-- easyApplytestcase.Next_btn -->
+      </class> <!-- easyApplytestcase.FinalTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

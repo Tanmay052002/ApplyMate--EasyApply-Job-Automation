@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">13 methods,   13 passed</span>
+                    <span class="method-stats">12 methods, 1 failed,   11 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="easyApplytestcase.FinalTest" class="method navigator-link" hash-for-method="finalTestCase">finalTestCase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,11 +118,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="filterTestcase.AllFilter" class="method navigator-link" hash-for-method="allFilters">allFilters</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="easyApplytestcase.Apply_btn" class="method navigator-link" hash-for-method="applyBtn">applyBtn</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -128,17 +137,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="easyApplytestcase.FinalTest" class="method navigator-link" hash-for-method="finalTestCase">finalTestCase</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="filterTestcase.JobType_fullTime" class="method navigator-link" hash-for-method="fullTimeopt">fullTimeopt</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcase.SkillInput" class="method navigator-link" hash-for-method="input(Automation)">input(Automation)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testcase.SkillInput" class="method navigator-link" hash-for-method="input(java)">input(java)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -178,94 +182,57 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">filterTestcase.JobType_fullTime</span>
+              <img src="failed.png"/>
+              <span class="class-name">easyApplytestcase.FinalTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="fullTimeopt">
-                  </a> <!-- fullTimeopt -->
-                  <span class="method-name">fullTimeopt</span>
+                  <a name="finalTestCase">
+                  </a> <!-- finalTestCase -->
+                  <span class="method-name">finalTestCase</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=132.0.6834.197)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7689281ff8563eb40ccc97db6cf9cde0, clickElement {id=f.08281C591AB8C11703EF5D4DF71F757D.d.1F1D19C2CF867EEDF35EA48DD2F21EA6.e.1395}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.197, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\tanma\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49786}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49786/devtoo..., se:cdpVersion: 132.0.6834.197, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (7689281ff8563eb40ccc97db6cf9cde0)] -&gt; xpath: //button[@aria-label=&quot;Review your application&quot;]]
+Session ID: 7689281ff8563eb40ccc97db6cf9cde0
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at easyApplypage.review_btnpage.option(review_btnpage.java:25)
+	at easyApplypage.FinalTestpage.Solution(FinalTestpage.java:80)
+	at easyApplytestcase.FinalTest.finalTestCase(FinalTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testcase.login</span>
+              <span class="class-name">filterTestcase.JobFunc_it</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="login(tanmaybansal441@gmail.com, Testing@1357)">
-                  </a> <!-- login(tanmaybansal441@gmail.com, Testing@1357) -->
-                  <span class="method-name">login</span>
-                  <span class="parameters">(tanmaybansal441@gmail.com,Testing@1357)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testcase.SkillInput</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="input(Automation)">
-                  </a> <!-- input(Automation) -->
-                  <span class="method-name">input</span>
-                  <span class="parameters">(Automation)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">filterTestcase.AllFilter</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="allFilters">
-                  </a> <!-- allFilters -->
-                  <span class="method-name">allFilters</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">filterTestcase.Easyapply</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="easyApplybtn">
-                  </a> <!-- easyApplybtn -->
-                  <span class="method-name">easyApplybtn</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testcase.jobSearch</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="jobSrh">
-                  </a> <!-- jobSrh -->
-                  <span class="method-name">jobSrh</span>
+                  <a name="itFuncopt">
+                  </a> <!-- itFuncopt -->
+                  <span class="method-name">itFuncopt</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -288,29 +255,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">filterTestcase.JobFunc_it</span>
+              <span class="class-name">filterTestcase.JobType_fullTime</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="itFuncopt">
-                  </a> <!-- itFuncopt -->
-                  <span class="method-name">itFuncopt</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">easyApplytestcase.Apply_btn</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="applyBtn">
-                  </a> <!-- applyBtn -->
-                  <span class="method-name">applyBtn</span>
+                  <a name="fullTimeopt">
+                  </a> <!-- fullTimeopt -->
+                  <span class="method-name">fullTimeopt</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -348,14 +300,46 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">easyApplytestcase.FinalTest</span>
+              <span class="class-name">testcase.login</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="finalTestCase">
-                  </a> <!-- finalTestCase -->
-                  <span class="method-name">finalTestCase</span>
+                  <a name="login(tanmaybansal441@gmail.com, Testing@1357)">
+                  </a> <!-- login(tanmaybansal441@gmail.com, Testing@1357) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">(tanmaybansal441@gmail.com,Testing@1357)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcase.SkillInput</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="input(java)">
+                  </a> <!-- input(java) -->
+                  <span class="method-name">input</span>
+                  <span class="parameters">(java)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">filterTestcase.AllFilter</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="allFilters">
+                  </a> <!-- allFilters -->
+                  <span class="method-name">allFilters</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -371,6 +355,36 @@
                   <a name="internopt">
                   </a> <!-- internopt -->
                   <span class="method-name">internopt</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">filterTestcase.Easyapply</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="easyApplybtn">
+                  </a> <!-- easyApplybtn -->
+                  <span class="method-name">easyApplybtn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcase.jobSearch</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="jobSrh">
+                  </a> <!-- jobSrh -->
+                  <span class="method-name">jobSrh</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -398,7 +412,6 @@
       &lt;class name=&quot;filterTestcase.JobFunc_eng&quot;/&gt;
       &lt;class name=&quot;filterTestcase.JobType_fullTime&quot;/&gt;
       &lt;class name=&quot;filterTestcase.JobType_intern&quot;/&gt;
-      &lt;class name=&quot;easyApplytestcase.Apply_btn&quot;/&gt;
       &lt;class name=&quot;easyApplytestcase.FinalTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
@@ -413,7 +426,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (13 classes)</span>
+                <span class="test-name">Test (12 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -439,64 +452,60 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(13);
+data.addRows(12);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'finalTestCase')
 data.setCell(0, 2, 'easyApplytestcase.FinalTest')
-data.setCell(0, 3, 48555);
+data.setCell(0, 3, 515119);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'login')
 data.setCell(1, 2, 'testcase.login')
-data.setCell(1, 3, 12502);
+data.setCell(1, 3, 6465);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'allFilters')
 data.setCell(2, 2, 'filterTestcase.AllFilter')
-data.setCell(2, 3, 5227);
+data.setCell(2, 3, 3606);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'applyBtn')
-data.setCell(3, 2, 'easyApplytestcase.Apply_btn')
-data.setCell(3, 3, 4233);
+data.setCell(3, 1, 'internopt')
+data.setCell(3, 2, 'filterTestcase.JobType_intern')
+data.setCell(3, 3, 2387);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'input')
-data.setCell(4, 2, 'testcase.SkillInput')
-data.setCell(4, 3, 3513);
+data.setCell(4, 1, 'easyApplybtn')
+data.setCell(4, 2, 'filterTestcase.Easyapply')
+data.setCell(4, 3, 2176);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'internopt')
-data.setCell(5, 2, 'filterTestcase.JobType_intern')
-data.setCell(5, 3, 3109);
+data.setCell(5, 1, 'input')
+data.setCell(5, 2, 'testcase.SkillInput')
+data.setCell(5, 3, 2132);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'easyApplybtn')
-data.setCell(6, 2, 'filterTestcase.Easyapply')
-data.setCell(6, 3, 2456);
+data.setCell(6, 1, 'jobSrh')
+data.setCell(6, 2, 'testcase.jobSearch')
+data.setCell(6, 3, 737);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'jobSrh')
-data.setCell(7, 2, 'testcase.jobSearch')
-data.setCell(7, 3, 1647);
+data.setCell(7, 1, 'entryExp')
+data.setCell(7, 2, 'filterTestcase.Exp_ent_level')
+data.setCell(7, 3, 257);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'interExpopt')
-data.setCell(8, 2, 'filterTestcase.Exp_intern_level')
-data.setCell(8, 3, 622);
+data.setCell(8, 1, 'fullTimeopt')
+data.setCell(8, 2, 'filterTestcase.JobType_fullTime')
+data.setCell(8, 3, 187);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'itFuncopt')
-data.setCell(9, 2, 'filterTestcase.JobFunc_it')
-data.setCell(9, 3, 510);
+data.setCell(9, 1, 'interExpopt')
+data.setCell(9, 2, 'filterTestcase.Exp_intern_level')
+data.setCell(9, 3, 166);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'engFuncopt')
 data.setCell(10, 2, 'filterTestcase.JobFunc_eng')
-data.setCell(10, 3, 487);
+data.setCell(10, 3, 130);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'entryExp')
-data.setCell(11, 2, 'filterTestcase.Exp_ent_level')
-data.setCell(11, 3, 471);
-data.setCell(12, 0, 12)
-data.setCell(12, 1, 'fullTimeopt')
-data.setCell(12, 2, 'filterTestcase.JobType_fullTime')
-data.setCell(12, 3, 337);
+data.setCell(11, 1, 'itFuncopt')
+data.setCell(11, 2, 'filterTestcase.JobFunc_it')
+data.setCell(11, 3, 122);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 8 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -511,50 +520,50 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">48 ignored methods</span>
+            <span class="header-content">44 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">filterTestcase.Exp_intern_level</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
                 <span class="ignored-method-name">setupReport</span>
                 <br/>
-                <span class="ignored-method-name">setup</span>
+                <span class="ignored-method-name">tearDown</span>
                 <br/>
                 <span class="ignored-method-name">tearDownReport</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">filterTestcase.JobFunc_it</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">setupReport</span>
+                <span class="ignored-method-name">tearDown</span>
                 <br/>
-                <span class="ignored-method-name">tearDownReport</span>
+                <span class="ignored-method-name">setupReport</span>
                 <br/>
                 <span class="ignored-method-name">setup</span>
                 <br/>
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">easyApplytestcase.Apply_btn</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">setupReport</span>
-                <br/>
                 <span class="ignored-method-name">tearDownReport</span>
-                <br/>
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
-                <span class="ignored-method-name">setup</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">filterTestcase.JobType_fullTime</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupReport</span>
+                <br/>
+                <span class="ignored-method-name">tearDownReport</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">easyApplytestcase.FinalTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">tearDownReport</span>
                 <br/>
@@ -569,11 +578,11 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">filterTestcase.Exp_ent_level</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
                 <span class="ignored-method-name">setupReport</span>
                 <br/>
                 <span class="ignored-method-name">tearDownReport</span>
-                <br/>
-                <span class="ignored-method-name">tearDown</span>
                 <br/>
                 <span class="ignored-method-name">setup</span>
                 <br/>
@@ -582,22 +591,22 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">filterTestcase.JobFunc_eng</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">setup</span>
-                <br/>
-                <span class="ignored-method-name">tearDown</span>
+                <span class="ignored-method-name">setupReport</span>
                 <br/>
                 <span class="ignored-method-name">tearDownReport</span>
                 <br/>
-                <span class="ignored-method-name">setupReport</span>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">testcase.SkillInput</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">setupReport</span>
-                <br/>
                 <span class="ignored-method-name">tearDownReport</span>
+                <br/>
+                <span class="ignored-method-name">setupReport</span>
                 <br/>
                 <span class="ignored-method-name">setup</span>
                 <br/>
@@ -608,19 +617,6 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">filterTestcase.AllFilter</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">setupReport</span>
-                <br/>
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
-                <span class="ignored-method-name">tearDownReport</span>
-                <br/>
-                <span class="ignored-method-name">setup</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">easyApplytestcase.FinalTest</span>
-              <div class="ignored-methods-div">
                 <span class="ignored-method-name">tearDown</span>
                 <br/>
                 <span class="ignored-method-name">setup</span>
@@ -628,45 +624,45 @@ return data;
                 <span class="ignored-method-name">setupReport</span>
                 <br/>
                 <span class="ignored-method-name">tearDownReport</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">filterTestcase.Easyapply</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
-                <span class="ignored-method-name">setupReport</span>
-                <br/>
-                <span class="ignored-method-name">tearDownReport</span>
-                <br/>
-                <span class="ignored-method-name">setup</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">filterTestcase.JobType_intern</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">setupReport</span>
+                <span class="ignored-method-name">setup</span>
                 <br/>
                 <span class="ignored-method-name">tearDown</span>
                 <br/>
-                <span class="ignored-method-name">setup</span>
+                <span class="ignored-method-name">tearDownReport</span>
+                <br/>
+                <span class="ignored-method-name">setupReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">filterTestcase.Easyapply</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupReport</span>
                 <br/>
                 <span class="ignored-method-name">tearDownReport</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">testcase.jobSearch</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDownReport</span>
+                <br/>
                 <span class="ignored-method-name">tearDown</span>
                 <br/>
                 <span class="ignored-method-name">setup</span>
                 <br/>
                 <span class="ignored-method-name">setupReport</span>
-                <br/>
-                <span class="ignored-method-name">tearDownReport</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -685,106 +681,101 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">797 ms</span>
+                <span class="method-start">286 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">login(tanmaybansal441@gmail.com, Testing@1357)</span>
-                <span class="method-start">9392 ms</span>
+                <span class="method-start">5762 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcase.jobSearch</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">jobSrh</span>
-                <span class="method-start">21910 ms</span>
+                <span class="method-start">12241 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcase.SkillInput</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">input(Automation)</span>
-                <span class="method-start">23705 ms</span>
+                <span class="method-name">input(java)</span>
+                <span class="method-start">13027 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">filterTestcase.AllFilter</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">allFilters</span>
-                <span class="method-start">27222 ms</span>
+                <span class="method-start">15163 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">filterTestcase.Easyapply</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">easyApplybtn</span>
-                <span class="method-start">32452 ms</span>
+                <span class="method-start">18772 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">filterTestcase.Exp_intern_level</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">interExpopt</span>
-                <span class="method-start">34911 ms</span>
+                <span class="method-start">20950 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">filterTestcase.Exp_ent_level</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">entryExp</span>
-                <span class="method-start">35537 ms</span>
+                <span class="method-start">21117 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">filterTestcase.JobFunc_it</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">itFuncopt</span>
-                <span class="method-start">36014 ms</span>
+                <span class="method-start">21376 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">filterTestcase.JobFunc_eng</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">engFuncopt</span>
-                <span class="method-start">36531 ms</span>
+                <span class="method-start">21500 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">filterTestcase.JobType_fullTime</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">fullTimeopt</span>
-                <span class="method-start">37024 ms</span>
+                <span class="method-start">21631 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">filterTestcase.JobType_intern</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">internopt</span>
-                <span class="method-start">37364 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">easyApplytestcase.Apply_btn</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">applyBtn</span>
-                <span class="method-start">40476 ms</span>
+                <span class="method-start">21819 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">easyApplytestcase.FinalTest</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">finalTestCase</span>
-                <span class="method-start">44713 ms</span>
+                <span class="method-start">24207 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcase.login</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">93273 ms</span>
+                <span class="method-start">539330 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDownReport</span>
-                <span class="method-start">93376 ms</span>
+                <span class="method-start">539367 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
