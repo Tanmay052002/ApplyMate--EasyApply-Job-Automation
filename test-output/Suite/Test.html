@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>11/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Feb 20 11:17:48 IST 2025</td>
+<td>Started on:</td><td>Fri Feb 21 15:24:28 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>539 seconds (539050 ms)</td>
+<tr><td>Total time:</td><td>335 seconds (335527 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,16 +77,18 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='easyApplytestcase.FinalTest.finalTestCase()'><b>finalTestCase</b><br>Test class: easyApplytestcase.FinalTest</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=132.0.6834.197)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div data-job-id=&quot;4130875962&quot; class=&quot;display-flex job-card-container relative job-card-list
+        job-card-container--clickable
+        
+        job-card-list--underline-title-on-hover  jobs-search-two-pane__job-card-container--viewport-tracking-6&quot; data-view-name=&quot;job-card&quot;&gt;...&lt;/div&gt; is not clickable at point (447, 236). Other element would receive the click: &lt;image href=&quot;https://static.licdn.com/aero-v1/sc/h/2jrf30m7ammwi6wdoq0ibnfhc&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;48&quot; height=&quot;48&quot;&gt;&lt;/image&gt;
+  (Session info: chrome=133.0.6943.99)
 Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7689281ff8563eb40ccc97db6cf9cde0, clickElement {id=f.08281C591AB8C11703EF5D4DF71F757D.d.1F1D19C2CF867EEDF35EA48DD2F21EA6.e.1395}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.197, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\tanma\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49786}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49786/devtoo..., se:cdpVersion: 132.0.6834.197, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (7689281ff8563eb40ccc97db6cf9cde0)] -&gt; xpath: //button[@aria-label=&quot;Review your application&quot;]]
-Session ID: 7689281ff8563eb40ccc97db6cf9cde0
+Command: [4dae636a2cbc20a216100560905b039b, clickElement {id=f.34CA2463FFE7E0255015A3D65E109963.d.EC716C81BA2AC219F242D40B4E53D467.e.869}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.99, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\tanma\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56684}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56684/devtoo..., se:cdpVersion: 133.0.6943.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (4dae636a2cbc20a216100560905b039b)] -&gt; xpath: (//div[@data-view-name=&quot;job-card&quot;])[7]]
+Session ID: 4dae636a2cbc20a216100560905b039b
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -96,21 +98,22 @@ Session ID: 7689281ff8563eb40ccc97db6cf9cde0
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at easyApplypage.review_btnpage.option(review_btnpage.java:25)
-	at easyApplypage.FinalTestpage.Solution(FinalTestpage.java:80)
+	at easyApplypage.FinalTestpage.Solution(FinalTestpage.java:60)
 	at easyApplytestcase.FinalTest.finalTestCase(FinalTest.java:18)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1558029640", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1558029640'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=132.0.6834.197)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace700262294", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace700262294'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div data-job-id=&quot;4130875962&quot; class=&quot;display-flex job-card-container relative job-card-list
+        job-card-container--clickable
+        
+        job-card-list--underline-title-on-hover  jobs-search-two-pane__job-card-container--viewport-tracking-6&quot; data-view-name=&quot;job-card&quot;&gt;...&lt;/div&gt; is not clickable at point (447, 236). Other element would receive the click: &lt;image href=&quot;https://static.licdn.com/aero-v1/sc/h/2jrf30m7ammwi6wdoq0ibnfhc&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;48&quot; height=&quot;48&quot;&gt;&lt;/image&gt;
+  (Session info: chrome=133.0.6943.99)
 Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7689281ff8563eb40ccc97db6cf9cde0, clickElement {id=f.08281C591AB8C11703EF5D4DF71F757D.d.1F1D19C2CF867EEDF35EA48DD2F21EA6.e.1395}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.197, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\tanma\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49786}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49786/devtoo..., se:cdpVersion: 132.0.6834.197, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (7689281ff8563eb40ccc97db6cf9cde0)] -&gt; xpath: //button[@aria-label=&quot;Review your application&quot;]]
-Session ID: 7689281ff8563eb40ccc97db6cf9cde0
+Command: [4dae636a2cbc20a216100560905b039b, clickElement {id=f.34CA2463FFE7E0255015A3D65E109963.d.EC716C81BA2AC219F242D40B4E53D467.e.869}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.99, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\tanma\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56684}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56684/devtoo..., se:cdpVersion: 133.0.6943.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (4dae636a2cbc20a216100560905b039b)] -&gt; xpath: (//div[@data-view-name=&quot;job-card&quot;])[7]]
+Session ID: 4dae636a2cbc20a216100560905b039b
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -123,8 +126,7 @@ Session ID: 7689281ff8563eb40ccc97db6cf9cde0
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at easyApplypage.review_btnpage.option(review_btnpage.java:25)
-	at easyApplypage.FinalTestpage.Solution(FinalTestpage.java:80)
+	at easyApplypage.FinalTestpage.Solution(FinalTestpage.java:60)
 	at easyApplytestcase.FinalTest.finalTestCase(FinalTest.java:18)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -153,8 +155,8 @@ Session ID: 7689281ff8563eb40ccc97db6cf9cde0
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>515</td>
-<td>easyApplytestcase.FinalTest@279fedbd</td></tr>
+<td>304</td>
+<td>easyApplytestcase.FinalTest@b3ca52e</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -165,60 +167,60 @@ Session ID: 7689281ff8563eb40ccc97db6cf9cde0
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='filterTestcase.Exp_ent_level.entryExp()'><b>entryExp</b><br>Test class: filterTestcase.Exp_ent_level</td>
-<td></td>
-<td>0</td>
-<td>filterTestcase.Exp_ent_level@2aceadd4</td></tr>
-<tr>
-<td title='testcase.SkillInput.input()'><b>input</b><br>Test class: testcase.SkillInput<br>Parameters: java</td>
-<td></td>
-<td>2</td>
-<td>testcase.SkillInput@1ce24091</td></tr>
-<tr>
-<td title='filterTestcase.Exp_intern_level.interExpopt()'><b>interExpopt</b><br>Test class: filterTestcase.Exp_intern_level</td>
-<td></td>
-<td>0</td>
-<td>filterTestcase.Exp_intern_level@24269709</td></tr>
-<tr>
-<td title='filterTestcase.JobType_fullTime.fullTimeopt()'><b>fullTimeopt</b><br>Test class: filterTestcase.JobType_fullTime</td>
-<td></td>
-<td>0</td>
-<td>filterTestcase.JobType_fullTime@2a5c8d3f</td></tr>
-<tr>
-<td title='filterTestcase.Easyapply.easyApplybtn()'><b>easyApplybtn</b><br>Test class: filterTestcase.Easyapply</td>
-<td></td>
-<td>2</td>
-<td>filterTestcase.Easyapply@7a8c8dcf</td></tr>
-<tr>
-<td title='testcase.jobSearch.jobSrh()'><b>jobSrh</b><br>Test class: testcase.jobSearch</td>
-<td></td>
-<td>0</td>
-<td>testcase.jobSearch@fbd1f6</td></tr>
-<tr>
 <td title='testcase.login.login()'><b>login</b><br>Test class: testcase.login<br>Parameters: tanmaybansal441@gmail.com, Testing@1357</td>
 <td></td>
-<td>6</td>
-<td>testcase.login@2cd76f31</td></tr>
-<tr>
-<td title='filterTestcase.JobType_intern.internopt()'><b>internopt</b><br>Test class: filterTestcase.JobType_intern</td>
-<td></td>
-<td>2</td>
-<td>filterTestcase.JobType_intern@752325ad</td></tr>
+<td>14</td>
+<td>testcase.login@367ffa75</td></tr>
 <tr>
 <td title='filterTestcase.JobFunc_it.itFuncopt()'><b>itFuncopt</b><br>Test class: filterTestcase.JobFunc_it</td>
 <td></td>
 <td>0</td>
-<td>filterTestcase.JobFunc_it@24aed80c</td></tr>
+<td>filterTestcase.JobFunc_it@3a52dba3</td></tr>
+<tr>
+<td title='testcase.jobSearch.jobSrh()'><b>jobSrh</b><br>Test class: testcase.jobSearch</td>
+<td></td>
+<td>0</td>
+<td>testcase.jobSearch@1ce24091</td></tr>
+<tr>
+<td title='filterTestcase.Exp_intern_level.interExpopt()'><b>interExpopt</b><br>Test class: filterTestcase.Exp_intern_level</td>
+<td></td>
+<td>0</td>
+<td>filterTestcase.Exp_intern_level@2aceadd4</td></tr>
+<tr>
+<td title='filterTestcase.JobType_fullTime.fullTimeopt()'><b>fullTimeopt</b><br>Test class: filterTestcase.JobType_fullTime</td>
+<td></td>
+<td>0</td>
+<td>filterTestcase.JobType_fullTime@752325ad</td></tr>
+<tr>
+<td title='filterTestcase.JobType_intern.internopt()'><b>internopt</b><br>Test class: filterTestcase.JobType_intern</td>
+<td></td>
+<td>2</td>
+<td>filterTestcase.JobType_intern@279fedbd</td></tr>
+<tr>
+<td title='testcase.SkillInput.input()'><b>input</b><br>Test class: testcase.SkillInput<br>Parameters: Testing</td>
+<td></td>
+<td>2</td>
+<td>testcase.SkillInput@5dda768f</td></tr>
+<tr>
+<td title='filterTestcase.AllFilter.allFilters()'><b>allFilters</b><br>Test class: filterTestcase.AllFilter</td>
+<td></td>
+<td>4</td>
+<td>filterTestcase.AllFilter@7a8c8dcf</td></tr>
+<tr>
+<td title='filterTestcase.Easyapply.easyApplybtn()'><b>easyApplybtn</b><br>Test class: filterTestcase.Easyapply</td>
+<td></td>
+<td>2</td>
+<td>filterTestcase.Easyapply@24269709</td></tr>
 <tr>
 <td title='filterTestcase.JobFunc_eng.engFuncopt()'><b>engFuncopt</b><br>Test class: filterTestcase.JobFunc_eng</td>
 <td></td>
 <td>0</td>
-<td>filterTestcase.JobFunc_eng@3a52dba3</td></tr>
+<td>filterTestcase.JobFunc_eng@2a5c8d3f</td></tr>
 <tr>
-<td title='filterTestcase.AllFilter.allFilters()'><b>allFilters</b><br>Test class: filterTestcase.AllFilter</td>
+<td title='filterTestcase.Exp_ent_level.entryExp()'><b>entryExp</b><br>Test class: filterTestcase.Exp_ent_level</td>
 <td></td>
-<td>3</td>
-<td>filterTestcase.AllFilter@5dda768f</td></tr>
+<td>0</td>
+<td>filterTestcase.Exp_ent_level@24aed80c</td></tr>
 </table><p>
 </body>
 </html>

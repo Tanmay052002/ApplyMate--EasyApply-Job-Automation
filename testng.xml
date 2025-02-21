@@ -16,7 +16,7 @@
     <class name="filterTestcase.JobType_fullTime"/>
       
       <class name="filterTestcase.JobType_intern"/>
-      <!--<class name="easyApplytestcase.Apply_btn"/>-->
+      <!--<class name="gggeasyApplytestcase.Apply_btn"/>-->
       <class name="easyApplytestcase.FinalTest"/>
     </classes>
   </test> <!-- Test -->

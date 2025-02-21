@@ -125,6 +125,9 @@ public class basetest {
     public void show() {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(loc.getProperty("show_btn")))).click();
 	}
+    public void impli(int impli) {
+    	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(impli));
+	}
     
 
     @AfterTest

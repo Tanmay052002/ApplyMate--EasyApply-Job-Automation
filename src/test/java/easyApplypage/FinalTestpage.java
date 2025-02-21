@@ -20,9 +20,9 @@ public class FinalTestpage extends basetest {
     SubmitApplicationpage submitOpt;
     Apply_btnpage applyOpt;
     Done_btnpage doneOpt;
-	
+    
     WebElement job_card;
-
+    WebElement success_icon;
 
     public FinalTestpage(WebDriver driver) {
         this.driver = driver;
@@ -39,6 +39,7 @@ public class FinalTestpage extends basetest {
     String next_Temp = loc.getProperty("Apply_next");
     String review_Temp = loc.getProperty("review_btn");
     String done_btn = loc.getProperty("done_btn");
+    String Success_icon = loc.getProperty("success_icon");
 
     int n = 0;
     public void Solution() throws InterruptedException {
@@ -50,31 +51,35 @@ public class FinalTestpage extends basetest {
             if (i > jobCards.size()) {
                 break; // Exit the loop if there are no more job cards
             }
-            Thread.sleep(2000);
-    		WebElement jobCard = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(loc.getProperty("job_card")+"[" + i + "]")));
+            Thread.sleep(5000);
+            WebElement jobCard = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(loc.getProperty("job_card")+"[" + i + "]")));
 
-    		JavascriptExecutor js = (JavascriptExecutor) driver;
-    		js.executeScript("arguments[0].scrollIntoView(true);", jobCard);
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("arguments[0].scrollIntoView(true);", jobCard);
 
-    		jobCard.click();
-    		
-            applyOpt.option(); // Click the easy apply button]
+            jobCard.click();
+            
+            if (isElementPresent(By.xpath(Success_icon))) {
+                System.out.println("Success icon is visible. Moving to the next job card...");
+                continue; // Move to the next job card
+            } else {
+                applyOpt.option(); // Click the easy apply button
+            }
             
             while (true) {
-            	Thread.sleep(5000);
+                Thread.sleep(5000);
                 if (isElementPresent(By.xpath(Submit_Temp))) {
                     System.out.println("Submit button is visible. Clicking it...");
-//                    Thread.sleep(5000);
                     submitOpt.option(); // Click submit button
                     System.out.println("Application submitted successfully!");
                     n++;
                 } else if (isElementPresent(By.xpath(next_Temp))) {
                     System.out.println("Next button is visible. Clicking it...");
-                    Thread.sleep(5000);
+//                    Thread.sleep(5000);
                     nextOpt.option(); // Click next button
                 } else if (isElementPresent(By.xpath(review_Temp))) {
                     System.out.println("Review button is visible. Clicking it...");
-                    Thread.sleep(5000);
+//                    Thread.sleep(5000);
                     reviewOpt.option(); // Click review button
                 } else if (isElementPresent(By.xpath(done_btn))) {
                     System.out.println("Done button is visible. Clicking it...");
@@ -85,12 +90,10 @@ public class FinalTestpage extends basetest {
                     System.out.println("Unknown step encountered!");
                     break;
                 }
+            }
+            System.out.println("No. of job Applied : "+n);
         }
-
         
-        }
-        
-        System.out.println("No. of job Applied : "+n);
     }
 
     private boolean isElementPresent(By locator) {
